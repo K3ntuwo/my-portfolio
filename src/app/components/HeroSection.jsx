@@ -23,7 +23,7 @@ const HeroSection = () => {
             </span>
             <br />
             <span className="text-white mb-4 text-4xl sm:text-5xl lg:text-6xl lg:leading-normal font-extrabold">
-              I'm a {" "}
+              {`I'm a `}
               <TypeAnimation
               sequence={[
                 "College Student",
