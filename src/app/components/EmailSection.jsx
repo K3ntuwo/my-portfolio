@@ -38,9 +38,18 @@ const EmailSection = () => {
       id="contact"
       className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative"
     >
-      {/* Background and Header */}
+      {/* Centered "Contact Me" Header */}
+      <div className="col-span-2 text-center mb-8">
+        <h2 className="text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
+          Contact Me
+        </h2>
+      </div>
+
+      {/* Background Circle Decoration */}
       <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary-900 to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute top-3/4 -left-4 transform -translate-x-1/2 -translate-1/2"></div>
-      <div className="z-9">
+
+      <div className="z-10">
+        {/* "Let's Connect" Title and Description */}
         <h5 className="text-xl font-bold text-white my-2">
           Let&apos;s Connect
         </h5>
@@ -49,7 +58,9 @@ const EmailSection = () => {
           open. Whether you have a question or just want to say hi, I&apos;ll
           try my best to get back to you!
         </p>
-        <div className="flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0 ">
+
+        {/* Social Icons */}
+        <div className="flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0 text-[#ADB7BE]">
           <a href="https://github.com/K3ntuwo"
             className="hover:text-purple-400"
             target='_blank'
@@ -71,7 +82,7 @@ const EmailSection = () => {
         </div>
       </div>
 
-      {/* Form */}
+      {/* Form Section */}
       <div>
         <form ref={form} onSubmit={sendEmail} className="flex flex-col">
           <div className="mb-6">

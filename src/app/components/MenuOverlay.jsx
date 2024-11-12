@@ -1,12 +1,21 @@
 import React from "react";
-import NavLink from "./NavLink";
+import { Link as ScrollLink } from "react-scroll";
 
 const MenuOverlay = ({ links }) => {
   return (
     <ul className="flex flex-col py-4 items-center">
       {links.map((link, index) => (
         <li key={index}>
-          <NavLink href={link.path} title={link.title} />
+          <ScrollLink
+            to={link.path}
+            smooth={true}
+            spy={true}
+            offset={-80}
+            className="text-white cursor-pointer"
+          >
+            {link.title}
+          </ScrollLink>
+          
         </li>
       ))}
     </ul>

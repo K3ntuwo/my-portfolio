@@ -3,20 +3,21 @@ import { Link as ScrollLink } from "react-scroll";
 import React, { useState } from "react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import MenuOverlay from "./MenuOverlay";
+import HeroSection from "./HeroSection";
 import Image from "next/image";
 
 const navLinks = [
   {
     title: "About",
-    path: "#about", // Adjusted path to match scrolling targets (e.g., #about becomes 'about')
+    path: "about", // Adjusted path to match scrolling targets (e.g., #about becomes 'about')
   },
   {
     title: "Projects",
-    path: "#projects", // Adjusted path to match scrolling targets (e.g., #projects becomes 'projects')
+    path: "projects", // Adjusted path to match scrolling targets (e.g., #projects becomes 'projects')
   },
   {
     title: "Contact",
-    path: "#contact", // Adjusted path to match scrolling targets (e.g., #contact becomes 'contact')
+    path: "contact", // Adjusted path to match scrolling targets (e.g., #contact becomes 'contact')
   },
 ];
 
@@ -27,7 +28,7 @@ const Navbar = () => {
     <nav className="fixed mx-auto border border-[#33353F] top-0 left-0 right-0 z-10 bg-[#121212] bg-opacity-100">
       <div className="flex container lg:py-4 flex-wrap items-center justify-between mx-auto px-4 ">
         <ScrollLink
-          to="home" // Example scroll target for the logo, change to your actual scroll target
+          to={HeroSection.id="home"} // Example scroll target for the logo, change to your actual scroll target
           smooth={true}
           spy={true}
           offset={-80}

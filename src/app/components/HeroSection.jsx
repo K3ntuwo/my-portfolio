@@ -9,7 +9,7 @@ const curriculumVitae = "/CVResume.pdf";
 
 const HeroSection = () => {
   return (
-    <section className="lg:py-16">
+    <section className="lg:py-16" id="home">
       <div className="grid grid-cols-1 sm:grid-cols-12">
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
@@ -25,20 +25,20 @@ const HeroSection = () => {
             <span className="text-white mb-4 text-4xl sm:text-5xl lg:text-6xl lg:leading-normal font-extrabold">
               {`I'm a `}
               <TypeAnimation
-              sequence={[
-                "College Student",
-                1000,
-                "Mobile Developer",
-                1000,
-                "Web Developer",
-                1000
-              ]}
-              wrapper="span"
-              speed={50}
-              repeat={Infinity}
-            />
+                sequence={[
+                  "College Student",
+                  1000,
+                  "Mobile Developer",
+                  1000,
+                  "Web Developer",
+                  1000
+                ]}
+                wrapper="span"
+                speed={50}
+                repeat={Infinity}
+              />
             </span>
-            
+
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
             I consider myself a responsible and orderly person.
@@ -60,7 +60,7 @@ const HeroSection = () => {
               <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
                 Download CV
               </span>
-            </a> 
+            </a>
           </div>
         </motion.div>
         <motion.div
@@ -71,13 +71,14 @@ const HeroSection = () => {
         >
           <div className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
             <Image
-              src="/images/hero-image.svg"
+              src="/images/myImage.svg"
               alt="Adrian Cabrera Hero Image"
-              className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-              width={300}
-              height={300}
+              className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-full object-cover"
+              width={700}
+              height={700}
             />
           </div>
+
         </motion.div>
       </div>
     </section>
