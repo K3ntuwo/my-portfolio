@@ -7,9 +7,12 @@ import { motion, useInView } from "framer-motion";
 const projectsData = [
   {
     id: 1,
-    title: "React Portfolio Website",
-    description: "Project 1 description",
-    image: "/images/projects/1.png",
+    title: "Kinaiya E-commerce",
+    description: "Kinaiya E-commerce is a static Java application for E-commerce. \
+    A user-friendly visual experience builder for Java applications is provided by\
+    software with the GUI. It mainly comprises graphical elements that enable the\
+     user to interact with software. Kinaiya is involved in design, development, and marketing.",
+    image: "/images/KinaiyaProjectImage.png",
     tag: ["All", "Web"],
     gitUrl: "/",
     previewUrl: "/",
