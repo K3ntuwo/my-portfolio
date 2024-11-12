@@ -1,7 +1,6 @@
 "use client";
 import { Link as ScrollLink } from "react-scroll";
 import React, { useState } from "react";
-import NavLink from "./NavLink";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import MenuOverlay from "./MenuOverlay";
 import Image from "next/image";
@@ -9,15 +8,15 @@ import Image from "next/image";
 const navLinks = [
   {
     title: "About",
-    path: "about", // Adjusted path to match scrolling targets (e.g., #about becomes 'about')
+    path: "#about", // Adjusted path to match scrolling targets (e.g., #about becomes 'about')
   },
   {
     title: "Projects",
-    path: "projects", // Adjusted path to match scrolling targets (e.g., #projects becomes 'projects')
+    path: "#projects", // Adjusted path to match scrolling targets (e.g., #projects becomes 'projects')
   },
   {
     title: "Contact",
-    path: "contact", // Adjusted path to match scrolling targets (e.g., #contact becomes 'contact')
+    path: "#contact", // Adjusted path to match scrolling targets (e.g., #contact becomes 'contact')
   },
 ];
 
